@@ -1,0 +1,75 @@
+/* colors: F9F7F7, DBE2EF, 3F72AF, 112D4E
+    https://colorhunt.co/palette/f9f7f7dbe2ef3f72af112d4e */
+
+body {
+    background-color: #3F72AF;
+    color: #112D4E;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+p {
+    padding: 15px 10px
+}
+
+.container-fluid{
+    padding: 3% 10% 7%;
+}
+
+#title {
+    color: white;
+}
+
+.navbar {
+    padding: 0 0 0.5rem;
+}
+
+#about {
+    background-color: #DBE2EF;
+}
+
+.about-me {
+    text-align: center;
+    line-height: 1.5;
+}
+
+.about-title {
+    font-weight: 900;
+    padding: 20px 0;
+}
+
+.about-body {
+    margin: 0 15%;
+    font-weight: 500;
+}
+
+#portfolio {
+    text-align: center;
+    padding: 5% 10%
+}
+
+.port-image {
+    border-radius: 20px;
+    max-width: 100%;
+    max-height: 400px;
+    opacity: 65%;
+    margin: 3% 0;
+}
+
+#footer {
+    align-items: center;
+    text-align: center;
+    background-color: #F9F7F7;
+    padding: 40px 0;
+}
+
+.bi-linkedin, .bi-github, .bi-envelope-at-fill {
+    font-size: 2em;
+    color: #3F72AF;
+    margin: 0 15px;
+}
+
+.bi-linkedin:hover, .bi-github:hover, .bi-envelope-at-fill:hover {
+    color: #112D4E;
+}
