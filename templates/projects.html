@@ -1,0 +1,30 @@
+{% block content %}
+{% include "header.html" %}
+
+<section id="portfolio">
+
+        <div id="portfolio-carousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+                {% for project in all_projects %}
+                <div class="carousel-item active">
+                    <h3 class="port-item-text">{{project.title}}</h3>
+                    <a href="{{project.link}}"><img class="port-image" src="{{url_for('static', filename=project.image)}}" alt={{project.alt_text}}></a>
+                </div>
+                {% endfor %}
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#portfolio-carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#portfolio-carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+
+        </div>
+
+    </section>
+
+{% include "footer.html" %}
+{% endblock %}
